@@ -19,14 +19,14 @@ function Navbar() {
 		window.addEventListener('scroll', scrollHandler);
 	}, []);
 
-	let navbarClasses = [styles.navbar];
+	let navbarClass = [styles.navbar];
 
-	if (scroll) navbarClasses = [styles.active];
-	else navbarClasses = [styles.navbar];
+	if (scroll) navbarClass = [styles.active];
+	else navbarClass = [styles.navbar];
 
 	return (
 		<>
-			<nav className={navbarClasses}>
+			<nav className={navbarClass}>
 				<div className={styles.logo_container}>
 					<Link to='/' className={styles.logo_link}>
 						<h1>Drop Rate</h1>

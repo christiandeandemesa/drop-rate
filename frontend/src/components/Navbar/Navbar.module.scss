@@ -13,6 +13,8 @@ $sub-font: 'Lato', sans-serif;
 	right: 0;
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid $primary-color;
+	z-index: 3;
 	transition: all 0.7s ease-in-out;
 }
 
