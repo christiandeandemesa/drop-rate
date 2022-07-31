@@ -18,9 +18,17 @@ $sub-font: 'Lato', sans-serif;
 
 %logo_container {
 	width: 25%;
+	height: 100%;
+}
+
+%logo_link {
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	text-decoration: none;
+	transition: all 0.7s ease-in-out;
 	cursor: pointer;
 }
 
@@ -37,7 +45,7 @@ $sub-font: 'Lato', sans-serif;
 }
 
 %ul {
-	width: 50%;
+	width: 45%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -59,12 +67,17 @@ $sub-font: 'Lato', sans-serif;
 	.logo_container {
 		@extend %logo_container;
 
-		h1 {
-			@extend %h1;
-		}
+		.logo_link {
+			@extend %logo_link;
+			color: $primary-color;
 
-		img {
-			@extend %img;
+			h1 {
+				@extend %h1;
+			}
+
+			img {
+				@extend %img;
+			}
 		}
 	}
 
@@ -96,12 +109,17 @@ $sub-font: 'Lato', sans-serif;
 	.logo_container {
 		@extend %logo_container;
 
-		h1 {
-			@extend %h1;
-		}
+		.logo_link {
+			@extend %logo_link;
+			color: $secondary-color;
 
-		img {
-			@extend %img;
+			h1 {
+				@extend %h1;
+			}
+
+			img {
+				@extend %img;
+			}
 		}
 	}
 

@@ -28,16 +28,16 @@ function Navbar() {
 		<>
 			<nav className={navbarClasses}>
 				<div className={styles.logo_container}>
-					<h1>Drop Rate</h1>
+					<Link to='/' className={styles.logo_link}>
+						<h1>Drop Rate</h1>
 
-					<img src={Logo} alt='logo' />
-
-					<Link to='/' />
+						<img src={Logo} alt='logo' />
+					</Link>
 				</div>
 
 				<ul>
 					<li>
-						<a href='https://www.google.com/'>Dummy Link</a>
+						<Link to='/shop'>Shop</Link>
 					</li>
 
 					<li>
